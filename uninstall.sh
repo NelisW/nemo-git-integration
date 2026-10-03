@@ -119,8 +119,8 @@ remove_user_local() {
     done
     
     # Remove script directory
-    if [ -d "$HOME_DIR/.local/share/nemo/nemo-git-integration" ]; then
-        rm -rf "$HOME_DIR/.local/share/nemo/nemo-git-integration"
+    if [ -d "$HOME_DIR/.local/share/nemo-git-integration" ]; then
+        rm -rf "$HOME_DIR/.local/share/nemo-git-integration"
         removed_count=$((removed_count + 1))
         log_info "Removed user scripts directory"
     fi
@@ -319,7 +319,7 @@ verify_user_local() {
         check_file "$HOME_DIR/.local/share/nemo/actions/$action" "User action: $action"
     done
     
-    check_directory "$HOME_DIR/.local/share/nemo/nemo-git-integration" "User scripts directory"
+    check_directory "$HOME_DIR/.local/share/nemo-git-integration" "User scripts directory"
     check_file "$HOME_DIR/.local/share/nemo-python/extensions/nemo_git_status.py" "User Python extension"
     check_file "$HOME_DIR/.config/nemo/actions/actions-tree.json" "User config file"
     

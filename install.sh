@@ -11,7 +11,7 @@ set -euo pipefail
 HOME_DIR="${HOME}"
 ICONS_DIR="${HOME_DIR}/.local/share/icons"
 NEMO_ACTIONS_DIR="${HOME_DIR}/.local/share/nemo/actions"
-nemo_git_integration_DIR="${HOME_DIR}/.local/share/nemo/nemo-git-integration"
+nemo_git_integration_DIR="${HOME_DIR}/.local/share/nemo-git-integration"
 CONFIG_DIR="${HOME_DIR}/.config/nemo/actions"
 
 # formats arguments as info, error
